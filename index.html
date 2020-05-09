@@ -1,0 +1,425 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500;700&amily=Rufina:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css"> 
+</head>
+<style>
+    .pixPer {
+        background-image: none;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+    #page {
+        opacity: none;
+    }
+    .pixPer__panel {
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        background-color:darksalmon;
+        z-index: 10000;
+    }
+    .pixPer__btn {
+        margin-left: 5px;
+        border: none;
+        width: 60px;
+        height: 40px;
+        border-radius: 10%;
+        background-color:mistyrose;
+    }
+</style>
+<body>
+        <!-- <div class="pixPer__panel">
+            <button class="pixP__btn" onclick="increaseOpacity()">+0.5</button>
+            <button class="pixP__btn" onclick="decreaseOpacity()">-0.5</button>
+            <button class="pixP__btn" onclick="toogleMockUp()">toogle Mok-up</button>
+        </div> -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <a href="">
+                        <div class="logo__content">
+                            <div class="logo__img">
+                                <img src="images/Icon.png" alt="">
+                            </div>
+                            <span class="logo__text">Leospa</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="burger-btn">
+                    <span></span>
+                </div>
+                <nav class="nav header__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">home</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">feature</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">service</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="banner__container container">
+                <div class="banner__content">
+                    <h2 class="banner__subtitle">spa & beauty center</h2>
+                    <h1 class="banner__title">Beauty and success starts here.</h1>
+                    <p class="banner__text">Together creeping heaven upon third dominion be upon won't darkness rule  behold it created good saw after she'd Our set living.</p>
+                </div>
+                <div class="banner__reserve">
+                    <a href="" class="btn banner__btn">
+                        <div class="btn__content">
+                            <span class="btn__text btn__text_m">reserve now</span>
+                            <span class="btn__icon fas fa-arrow-right" ></span>
+                        </div>
+                    </a>
+                    <a href="" class="banner__row">
+                        <div class="banner__icon"><span class="fas fa-play"></span></div>
+                        <p class="banner__text banner__text_align-center">Watch our story</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__img"><img src="images/face1.png" alt=""></div>
+    </div>
+    <main class="main" id="main">
+        <div class="about">
+            <div class="content about__body">
+                <div class="about__img"><img src="images/flower2.png" alt=""></div>
+                <img class="icon" src="images/Icon.png"></img>
+                <h2 class="content__subtitle about__subtitle">About our spa center</h2>
+                <h1 class="content__title about__title">Come and you will be Inspired!</h1>
+                <p class="content__text">It’s the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker</p>
+                <button class="btn about__btn">
+                    <span class="btn__text">Read more</span>
+                </button>
+                <img class="about__image" src="images/flower3.png"></img>
+            </div>
+        </div>
+        <div class="feature main__feature">
+            <div class="feature__item">
+                <div class="feature__img">
+                    <img src="images/feature_1.png" class="">
+                </div>
+                <div class="feature__content">
+                    <svg class="feature__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M472 380h-8.9c22.1-21.5 22.6-56.9 1.1-79 -3.4-3.5-7.3-6.5-11.5-9 16.9-10.1 27.3-28.3 27.3-48 0-30.9-25.1-56-56-56h-72v-56c0-4.4-3.6-8-8-8 -0.4 0-0.8 0-1.2 0.1L248 138.7v-7.5c18.6-3.8 32-20.2 32-39.2 0-34.9-32.9-68.3-34.3-69.7 -3.1-3.1-8.2-3.1-11.3 0C232.9 23.7 200 57.1 200 92c0 19 13.4 35.4 32 39.2v9.9l-97.2 15c-3.9 0.6-6.8 4-6.8 7.9v89.1c-5.8-6.3-12.6-11.7-20-16 -2.5-1.4-5.5-1.4-8 0 -23.6 13.7-39.6 37.6-43.2 64.7 -5.5-1.1-11.2-1.7-16.8-1.8 -3.5 0-7.1 0.2-10.6 0.7 -2.8 0.3-5.3 2.2-6.4 4.8 -16.3 38.2-3.6 82.7 30.5 106.5H0v16h19.1l13.8 27.6c1.4 2.7 4.1 4.4 7.2 4.4h304c4.4 0 8-3.6 8-8v-24h51.1l13.8 27.6c1.4 2.7 4.1 4.4 7.2 4.4h32c4.4 0 8-3.6 8-8v-24h8c4.4 0 8-3.6 8-8v-32C480 383.6 476.4 380 472 380zM464 340c0 22.1-17.9 40-40 40H280c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40h104c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-4.4 0-8-3.6-8-8s3.6-8 8-8h56v-16h-56c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c22.1 0 40-17.9 40-40 0-8.7-2.9-17.1-8.2-24H424C446.1 300 464 317.9 464 340zM400 204c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-4.4 0-8-3.6-8-8s3.6-8 8-8h56v-16h-56c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c22.1 0 40-17.9 40-40 0-8.3-2.6-16.3-7.4-23 21.5 4.9 35 26.3 30.2 47.9 -4.1 18.1-20.2 31-38.8 31.1h-40 -72c-22.1 0-40-17.9-40-40 0-22.1 17.9-40 40-40H400zM216 92c0-20.5 15.4-41.7 24-52 8.6 10.3 24 31.5 24 52 0 10.1-6.4 19.2-16 22.5v-14.5h-16v14.5C222.4 111.2 216 102.1 216 92zM104 253.4c17.9 12 29.4 31.4 31.6 52.8 -11.9 4.8-22.7 12.1-31.5 21.4 -8.9-9.3-19.7-16.6-31.6-21.3C74.5 284.9 86.1 265.5 104 253.4zM144.1 320.1c7.7-2.7 15.7-4.1 23.9-4.1 1.3 0 2.6 0 3.9 0.1 13.2 37.5-6.5 78.6-44.1 91.8 -7.7 2.7-15.7 4.1-23.9 4.1 -1.3 0-2.6 0-3.9-0.1C86.9 374.3 106.6 333.3 144.1 320.1zM32 340c0-8.1 1.4-16.2 4.1-23.9 1.4-0.1 2.7-0.1 3.9-0.1 20.7-0.1 40.4 8.9 54 24.5 -13.1 20.2-17.3 44.9-11.4 68.2C52.5 399.4 32 371.5 32 340zM163.1 444H44.9l-8-16h134.1L163.1 444zM240 444h-59.1l8-16H208v-16h-53.6c34.1-23.8 46.8-68.3 30.5-106.5 -1.1-2.6-3.6-4.5-6.4-4.8 -9.1-1.2-18.3-0.8-27.3 1 -1.2-8.9-3.9-17.6-7.7-25.7H144V170.9l192-29.5v46.7h-24c-30.9 0-56 25-56 55.9 0 15.3 6.3 30 17.4 40.6 -30.7 3.6-52.6 31.4-49 62.1 1.5 12.7 7.3 24.5 16.5 33.5H232c-4.4 0-8 3.6-8 8v32c0 4.4 3.6 8 8 8h8V444zM275.1 444H256v-16h27.1L275.1 444zM336 444h-43.1l8-16H336V444zM448 444h-19.1l-8-16H448V444zM464 412H240v-16h224V412z"/><rect x="160" y="188" width="16" height="64"/><rect x="160" y="268" width="16" height="16"/></svg>
+                    <h2 class="feature__title">Modern Style</h2>
+                </div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__img">
+                    <img src="images/feature_2.png" alt="f2">
+                </div>
+                <div class="feature__content">
+                    <svg class="feature__icon" id="Capa_1" enable-background="new 0 0 480.164 480.164" height="512" viewBox="0 0 480.164 480.164" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m199.223 279.891-2.11.843 5.938 14.86 2.109-.848c21.531-8.609 48.313-8.613 69.844 0l2.109.844 5.938-14.86-2.11-.84c-25.265-10.113-56.453-10.109-81.718.001z"/><path d="m232.082 160.164h16v88h-16z"/><path d="m464.082.164v146.809c0 2.578-.414 5.139-1.227 7.586l-38.046 114.132-59.36 92.911c-1.839 2.905-4.815 4.901-8.2 5.5-7.141 1.114-13.834-3.772-14.948-10.913-.428-2.745.028-5.556 1.304-8.025 13.915-25.266 39.5-72.168 39.5-72.168.299-.547.534-1.126.7-1.727l6.471-23.722 25.435-79.957-15.25-4.852-25.492 80.137.058.018c-.035.111-.121.189-.152.3-2.04 7.488-9.763 11.904-17.251 9.865-.519-.141-1.03-.313-1.53-.513-6.288-2.517-9.887-9.158-8.563-15.8l12.4-62.008c.101-.518.151-1.045.151-1.573v-23.434c-.091-34.116 13.468-66.851 37.656-90.91 1.5-1.5 2.344-3.534 2.344-5.656v-56h-16v52.738c-5.542 5.853-10.588 12.156-15.086 18.844-44.183-71.201-137.719-93.104-208.92-48.921-19.853 12.32-36.593 29.058-48.915 48.911-4.496-6.684-9.54-12.984-15.079-18.834v-52.738h-16v56c0 2.122.844 4.156 2.344 5.656 24.189 24.06 37.748 56.797 37.656 90.914v23.43c.001.527.054 1.053.156 1.57l12.4 62.008c1.328 6.645-2.272 13.291-8.563 15.809-7.209 2.882-15.389-.625-18.271-7.834-.199-.497-.369-1.006-.51-1.522-.031-.113-.117-.191-.152-.3l.058-.018-25.493-80.139-15.25 4.852 25.435 79.957 6.471 23.722c.166.601.401 1.18.7 1.727 0 0 25.585 46.9 39.5 72.168 3.085 5.594 1.554 12.477-4.032 16.672-2.749 2.058-6.23 2.88-9.609 2.269-3.386-.597-6.363-2.594-8.2-5.5l-59.36-92.911-38.046-114.13c-.818-2.447-1.235-5.011-1.234-7.591v-146.809h-16v146.809c-.002 4.299.692 8.571 2.055 12.648l38.359 115.074c.207.625.49 1.223.844 1.778l59.89 93.746c4.257 6.638 11.078 11.212 18.836 12.629 1.642.299 3.308.449 4.977.449 6.322-.035 12.46-2.131 17.484-5.969.318-.238.563-.532.869-.781.576.653 1.108 1.361 1.694 2 4.611 5.059 9.625 9.735 14.992 13.983v30.353c-.009 15.893-2.573 31.682-7.594 46.761-1.392 4.193.879 8.721 5.073 10.113.813.27 1.664.407 2.521.407h160c4.418.001 8.001-3.58 8.001-7.999 0-.857-.137-1.708-.407-2.521-5.021-15.079-7.585-30.868-7.594-46.761v-30.347c5.347-4.231 10.343-8.889 14.938-13.927.62-.677 1.167-1.4 1.772-2.091.431.359.788.769 1.243 1.111 12.523 9.396 30.292 6.861 39.688-5.662.426-.567.83-1.15 1.212-1.748l59.89-93.746c.354-.555.637-1.153.844-1.778l38.367-115.078c1.357-4.077 2.048-8.347 2.046-12.644v-146.809zm-106.248 91.216c-2.072-2.548-4.232-4.92-6.408-7.251l3.965-3.965c1.481 2.38 2.884 4.821 4.23 7.311-.648 1.278-1.178 2.609-1.787 3.905zm-11.771-24.516-6.095 6.1c-5.974-5.262-12.361-10.035-19.1-14.274l8.84-8.839c5.937 5.183 11.41 10.876 16.355 17.013zm-172.146-16.18-10.678-10.677c7.83-5.411 16.21-9.98 25-13.63l7.8 15.59c-7.6 2.297-14.998 5.212-22.122 8.717zm38.1-12.55-8.456-16.9c9.314-2.57 18.875-4.138 28.521-4.68v19.14c-6.737.357-13.441 1.172-20.067 2.44zm36.065-21.693c9.673.548 19.26 2.124 28.6 4.7l-8.524 17c-6.629-1.267-13.336-2.085-20.076-2.446zm43.852 9.966c8.808 3.612 17.209 8.147 25.061 13.53l-10.75 10.748c-7.121-3.505-14.516-6.422-22.113-8.721zm-141.373 23.548 8.734 8.732c-6.743 4.233-13.13 9.007-19.1 14.275l-6.011-6.01c3.033-3.826 6.271-7.485 9.7-10.96 2.143-2.133 4.425-4.065 6.677-6.037zm-25.8 30.2 3.978 3.977c-2.182 2.342-4.348 4.715-6.408 7.248-.606-1.29-1.134-2.615-1.779-3.888 1.342-2.484 2.718-4.946 4.208-7.335zm184.621 384.009h-138.6c3.514-13.479 5.295-27.351 5.3-41.281v-19.185c3.928 2.269 7.973 4.331 12.117 6.177 33.036 14.68 70.745 14.68 103.781 0 4.138-1.845 8.177-3.904 12.1-6.17v19.182c.006 13.928 1.787 27.799 5.302 41.277zm13.789-96.3c-10.484 11.692-23.33 21.027-37.689 27.386-28.912 12.777-61.869 12.777-90.781 0-14.389-6.373-27.26-15.733-37.758-27.457-1.476-1.607-2.812-3.293-4.193-4.95 2.394-7.447 1.608-15.552-2.174-22.4-11.554-20.988-31.18-56.929-37.469-68.449 16.288 3.178 32.069-7.449 35.248-23.738.751-3.85.742-7.81-.029-11.656l-5.418-27.1c7.073.692 14.192 1.168 21.34 1.168 12.472.01 24.922-1.055 37.211-3.184l-2.75-15.758c-19.531 3.317-39.442 3.755-59.1 1.3l-3.527-17.655v-13.8c18.06-9.643 39.874-11.981 62.031-6.374l3.938-15.508c-23.254-5.9-46.332-4.239-66.38 4.35-.683-11.938-2.847-23.744-6.442-35.148 3.992-5.727 8.425-11.134 13.259-16.17.43-.481.914-.961 1.406-1.461.415-.41.813-.825 1.618-1.532 9.086-8.853 19.394-16.359 30.609-22.289 10.487-5.658 21.701-9.848 33.328-12.453 20.182-4.716 41.181-4.709 61.36.02 11.612 2.61 22.81 6.803 33.281 12.461 11.249 5.957 21.585 13.496 30.692 22.388 1.07 1 2.055 1.989 3.164 3.172 4.737 4.94 9.079 10.244 12.986 15.863-3.596 11.405-5.76 23.212-6.442 35.151-20.044-8.586-43.113-10.241-66.38-4.35l3.938 15.508c22.157-5.614 43.977-3.277 62.031 6.372v13.8l-3.681 18.411c-17 1.482-34.119.79-50.944-2.059l-2.75 15.765c12.146 2.092 24.448 3.139 36.773 3.129 4.564 0 9.116-.176 13.647-.46l-5.287 26.445c-3.255 16.277 7.301 32.11 23.578 35.365 3.841.768 7.796.778 11.641.029-6.289 11.52-25.907 47.461-37.469 68.449-3.778 6.833-4.551 14.928-2.133 22.353-1.403 1.689-2.755 3.393-4.286 5.066z"/></svg>
+                    <h2 class="feature__title">Body Treatment</h2>
+                </div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__img">
+                    <img src="images/feature_3.png" alt="f3">
+                </div>
+                <div class="feature__content">
+                    <svg class="feature__icon" id="Capa_1" enable-background="new 0 0 511.838 511.838" height="512" viewBox="0 0 511.838 511.838" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m448.125 363.149c8.284-8.219 15.864-17.721 22.676-28.458 22.01-34.697 36.188-83.276 39.92-136.79 1.624-23.27 1.202-46.593-1.253-69.322-.092-.849-.379-3.812-1.223-13.11-.5-5.496-3.323-10.54-7.747-13.84-4.421-3.297-10.052-4.563-15.457-3.479-15.227 3.06-30.271 6.202-45.232 10.125-6.203-14.94-13.439-29.364-21.612-42.977-.766-1.275-4.34-7.464-5.516-9.498-2.482-4.297-6.689-7.348-11.544-8.372-4.856-1.024-9.929.068-13.929 2.994-17.862 13.062-36.691 27.216-53.314 43.968-2.459 2.478-4.857 4.966-7.197 7.464-13.407-20.213-28.369-39.264-44.574-56.668-.67-.719-2.942-3.214-9.966-11.021-3.975-4.417-9.66-6.948-15.627-6.948-5.945.007-11.629 2.55-15.595 6.977-19.58 21.864-38.531 43.591-55.059 68.453-2.576-2.764-5.21-5.518-7.928-8.257-16.625-16.753-35.454-30.907-53.315-43.968-4.001-2.926-9.076-4.017-13.929-2.994-4.856 1.024-9.064 4.075-11.545 8.372-2.562 4.434-5.167 8.844-7.744 13.268-2.084 3.578-.874 8.168 2.704 10.253 3.577 2.083 8.168.874 10.253-2.704 2.587-4.438 5.201-8.867 7.772-13.317.487-.843 1.245-1.113 1.653-1.199.408-.085 1.204-.145 1.983.426 18.098 13.234 35.656 26.438 51.522 42.426 3.543 3.57 6.95 7.162 10.232 10.77-5.854 9.523-11.243 19.026-16.16 28.492-16.716-9.376-35.027-17.788-54.836-25.156-6.656-2.476-13.313-4.687-19.98-6.699.79-1.875 1.592-3.743 2.412-5.589 1.682-3.784-.022-8.215-3.806-9.897-3.781-1.681-8.214.022-9.897 3.806-1.113 2.503-2.193 5.04-3.251 7.592-14.957-3.92-29.996-7.062-45.219-10.121-5.404-1.087-11.038.182-15.457 3.479-4.423 3.299-7.247 8.344-7.747 13.84-.679 7.468-1.09 11.878-1.223 13.109-2.454 22.726-2.876 46.05-1.253 69.323 3.732 53.514 17.91 102.093 39.92 136.79 6.812 10.739 14.393 20.241 22.678 28.46-31.773 9.871-63.715 25.611-63.715 49.009 0 15.325 13.572 28.953 40.339 40.503 5.234 2.26 11.134 2.645 16.614 1.085h.001l33.398-9.51c4.221-1.201 8.754.58 11.028 4.331l9.241 15.245c3.8 6.267 10.113 10.504 17.322 11.625 38.607 6.006 82.86 9.181 127.977 9.181 66.977 0 130.035-6.844 177.557-19.271 35.748-9.348 78.362-26.164 78.362-53.189-.001-23.397-31.941-39.141-63.714-49.012zm-103.589-258.197c15.865-15.988 33.425-29.191 51.522-42.426.518-.379 1.045-.48 1.46-.48.209 0 .389.026.525.055.408.086 1.167.356 1.654 1.199 3.328 5.764 5.07 8.761 5.645 9.718 7.491 12.479 14.166 25.675 19.932 39.344-6.664 2.011-13.319 4.221-19.973 6.697-19.474 7.244-37.496 15.5-53.983 24.685-4.955-9.646-10.376-19.269-16.261-28.834 3.053-3.335 6.202-6.656 9.479-9.958zm-148.777 9.962c16.558-25.69 36.101-48.109 56.346-70.715 1.145-1.279 2.723-1.984 4.449-1.986 1.721 0 3.304.704 4.455 1.983 5.696 6.33 9.106 10.1 10.137 11.208 16.92 18.172 32.465 38.194 46.204 59.51 16.256 25.221 29.712 51.98 38.911 77.385 1.41 3.894 5.716 5.908 9.603 4.497 3.893-1.41 5.906-5.709 4.497-9.603-3.61-9.968-7.765-19.967-12.429-29.959 16.002-8.969 33.557-17.039 52.597-24.121 25.354-9.43 51.111-14.965 77.467-20.261 2.52-.509 5.083 1.408 5.316 3.975.696 7.654 1.104 12.024 1.248 13.361 2.36 21.851 2.765 44.282 1.204 66.669-3.562 51.073-16.925 97.17-37.625 129.801-25.847 40.745-62.349 60.76-108.553 59.509-3.717-.101-7.551-.568-11.44-1.369 43.485-39.457 58.179-95.449 42.453-163.28-.935-4.034-4.957-6.548-8.998-5.611-4.033.935-6.546 4.963-5.611 8.997 7.534 32.494 7.651 62.069.349 87.902-8.275 29.268-26.235 53.83-53.386 73.005-14.393 10.166-34.869 16.027-56.175 16.082-.106 0-.209 0-.315 0-21.628 0-41.615-5.708-56.307-16.084-51.61-36.454-70.472-91.234-54.548-158.419 8.621-36.379 25.495-74.221 50.151-112.476zm-142.058 211.744c-20.7-32.631-34.061-78.728-37.623-129.801-1.562-22.391-1.157-44.822 1.202-66.667.144-1.333.553-5.704 1.248-13.363.157-1.728 1.182-2.733 1.779-3.178.595-.444 1.846-1.137 3.537-.797 26.357 5.296 52.114 10.83 77.466 20.261 19.352 7.198 37.175 15.415 53.39 24.559-10.607 22.398-18.54 44.553-23.685 66.26-8.364 35.286-7.843 67.844 1.547 96.77 7.92 24.396 22.04 45.812 42.072 63.894-4.211.924-8.364 1.462-12.379 1.572-46.185 1.258-82.706-18.765-108.554-59.51zm375.982 124.185c-46.319 12.112-108.03 18.783-173.763 18.783-44.358 0-87.814-3.114-125.672-9.002-2.825-.44-5.305-2.11-6.804-4.582l-9.241-15.245c-6.701-8.934-16.595-14.214-27.958-10.98l-33.397 9.51c-2.164.615-4.497.464-6.567-.43-10.105-4.361-23.286-10.269-29.191-20.213-6.319-10.642 4.866-19.731 13.308-25.081 14.155-8.97 30.683-14.317 46.717-18.763 4.126 3.151 8.389 6.036 12.794 8.626 9.844 5.788 20.474 10.188 31.509 13.119 13.009 3.456 27.815 4.936 41.245 4.571 8.569-.233 17.415-1.966 26.186-5.008.876.641 1.76 1.278 2.654 1.909 17.202 12.15 40.259 18.832 64.961 18.832h.352c24.677-.063 47.686-6.75 64.789-18.829.751-.531 1.47-1.08 2.208-1.618 8.502 2.866 17.063 4.489 25.364 4.715 25.092.683 50.776-4.767 72.754-17.69 4.405-2.59 8.667-5.476 12.794-8.627 45.672 12.663 62.118 27.467 62.118 37.321 0 10.21-17.644 25.733-67.16 38.682z"/></g></svg>               
+                    <h2 class="feature__title">Best Places</h2>
+                </div>  
+            </div>
+            <div class="feature__item">
+                <div class="feature__img">
+                    <img src="images/feature_4.png" alt="f4">
+                </div>
+                <div class="feature__content">
+                    <svg class="feature__icon" id="Capa_1" enable-background="new 0 0 511.98 511.98" height="512" viewBox="0 0 511.98 511.98" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><g><path d="m413.904 157.08c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5c-11.536 0-20.922-9.386-20.922-20.922v-59.567c0-6.751 5.492-12.243 12.243-12.243s12.243 5.492 12.243 12.243c0 1.909-.744 3.705-2.094 5.055-2.929 2.929-2.929 7.678 0 10.606 2.929 2.929 7.678 2.929 10.606 0 4.184-4.183 6.487-9.745 6.487-15.661 0-15.022-12.221-27.243-27.243-27.243-15.021 0-27.243 12.221-27.243 27.243v59.567c.001 19.807 16.115 35.922 35.923 35.922z"/><path d="m346.619 157.08c4.142 0 7.5-3.358 7.5-7.5v-84.924c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v84.924c0 4.142 3.358 7.5 7.5 7.5z"/><path d="m96.606 77.252c2.929-2.929 2.929-7.678 0-10.606-1.35-1.35-2.094-3.146-2.094-5.055 0-6.751 5.492-12.243 12.243-12.243 6.75 0 12.243 5.492 12.243 12.243v59.567c0 11.536-9.386 20.922-20.922 20.922-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5c19.808 0 35.922-16.114 35.922-35.922v-59.567c0-15.022-12.221-27.243-27.243-27.243s-27.243 12.221-27.243 27.243c0 5.916 2.304 11.478 6.487 15.661 2.93 2.929 7.679 2.929 10.607 0z"/><path d="m165.362 157.08c4.142 0 7.5-3.358 7.5-7.5v-84.924c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v84.924c0 4.142 3.358 7.5 7.5 7.5z"/><path d="m467.125 183.939c-4.263-4.774-10.378-7.512-16.778-7.512h-131.182l-.389-1.554c-1.872-7.488-5.794-14.281-11.343-19.644l-5.77-5.578c-14.609-14.173-10.598-36.811-5.358-54.085 2.417-7.969 7.125-15.132 10.061-22.977 2.252-6.018 3.395-12.349 3.395-18.819 0-29.648-24.121-53.77-53.771-53.77s-53.771 24.122-53.771 53.771c0 1.563.096 3.159.285 4.744.49 4.113 4.221 7.058 8.334 6.56 4.113-.49 7.05-4.222 6.56-8.334-.119-.999-.179-1.998-.179-2.97-.002-21.097 17.664-38.771 38.771-38.771 21.378 0 38.771 17.393 38.771 38.771 0 8.334-3.135 15.728-6.738 23.062-2.2 4.479-4.474 9.111-6.072 14.38-3.152 10.394-4.897 20.811-5.186 30.96-.002.071-.003.142-.003.213 0 16.145 4.727 28.583 14.463 38.038l5.782 5.59c3.007 2.907 5.264 6.475 6.603 10.413h-95.24c1.338-3.938 3.595-7.506 6.603-10.414l5.806-5.613c3.221-3.221 6.029-6.772 8.22-10.776 10.297-18.818 6.381-42.7-.137-62.072-1.321-3.926-5.574-6.039-9.5-4.717-3.926 1.321-6.038 5.574-4.717 9.5 3.112 9.25 5.727 22 5.583 31.88-.09 6.212-1.406 12.489-4.349 17.995-2.766 5.174-7.177 9.003-11.331 13.019-5.549 5.364-9.472 12.157-11.343 19.645l-.388 1.554h-131.184c-6.4 0-12.516 2.738-16.778 7.512s-6.293 11.16-5.571 17.519l32.994 290.566c1.292 11.376 10.9 19.956 22.35 19.956h322.727c11.45 0 21.058-8.579 22.35-19.956l32.994-290.566c.72-6.36-1.311-12.746-5.574-17.52zm-161.401 7.488h69.458v59.573h-69.458zm-84.467 0h69.467v59.573h-69.467zm-84.458 0h69.458v59.573h-69.458zm-82.611 8.339c-.244-2.149.415-4.222 1.856-5.836s3.426-2.502 5.589-2.502h60.166v59.572h-61.793zm13.717 120.799h53.894v47.086h-48.548zm53.894 176.415h-27.172c-3.814 0-7.015-2.858-7.445-6.648l-6.031-53.116h40.648zm84.458 0h-69.458v-59.764h69.458zm84.467 0h-69.467v-59.764h69.467zm84.458 0h-69.458v-59.764h69.458zm49.617-6.647c-.43 3.79-3.631 6.648-7.445 6.648h-27.172v-59.764h40.648zm7.734-68.117h-353.086l-4.493-39.565h256.036c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-25.267v-47.086h69.458v47.086h-9.191c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h71.036zm-295.734-54.565v-47.086h69.458v47.086zm84.458 0v-47.086h69.467v47.086zm217.472 0h-48.548v-47.086h53.894zm7.05-62.086h-379.578l-4.492-39.565h388.563zm12.013-105.799-5.817 51.234h-61.793v-59.573h60.166c2.163 0 4.148.889 5.589 2.502 1.44 1.615 2.1 3.688 1.855 5.837z"/></g><circle cx="109.747" cy="285.783" r="7.5"/><circle cx="402.234" cy="285.783" r="7.5"/><circle cx="127.047" cy="402.434" r="7.5"/><circle cx="384.933" cy="402.434" r="7.5"/></g></g></svg>                
+                    <h2 class="feature__title">Expert Staff</h2>
+                </div>  
+            </div>
+        </div>
+        <div class="service main__service">
+            <div class="contant">
+                <h2 class="content__title">Popular Procedures</h2>
+                <p class="content__text">To doesn't his appear replenish together called he of mad place won't wherein blessed second every <br> wherein were meat kind wherein and martcin <br></p>
+            </div>
+            <div class="service__body">
+                <div class="card service__card">
+                    <div class="service__img" >
+                        <img src="images/service_img1.png">
+                    </div>
+                    <h2 class="content__subtitle">Massage Therapy</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read Moore</button>
+                </div>
+                <div class="card service__card">
+                    <div class="service__img" >
+                        <img src="images/service_img2.png">
+                    </div>
+                    <h2 class="content__subtitle">Massage Therapy</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read Moore</button>
+                </div>
+                <div class="card service__card">
+                    <div class="service__img" >
+                        <img src="images/service_img3.png">
+                    </div>
+                    <h2 class="content__subtitle">Massage Therapy</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read Moore</button>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials main__testimonials">
+            <div class="testimonials__content ">
+                <div class="testimonials__item active">
+                    <img class="icon testimonials__icon" src="images/testimonials_icon.png">
+                    <p class="testimonials__text">
+                        First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life <br> blessed you meat shall you winged under from their there he That you're one called gather make much red <br> wherein set fourth green bearing fifth replenish given she had.
+                    </p>
+                    <img class="icon testimonials__icon testimonials__icon_portret" src="images/testimonials_aIcon.png">
+                    <p class="testimonials__text">
+                        Jack Marsh, Executive
+                    </p>
+                </div>
+                <div class="testimonials__item">
+                    <img class="icon testimonials__icon" src="images/testimonials_icon.png">
+                    <p class="testimonials__text">
+                        First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life <br> blessed you meat shall you winged under from their there he That you're one called gather make much red <br> wherein set fourth green bearing fifth replenish given she had.
+                    </p>
+                    <img class="icon testimonials__icon testimonials__icon_portret" src="images/testimonials_aIcon.png">
+                    <p class="testimonials__text">
+                        Jack Marsh, Executive
+                    </p>
+                </div>
+                <div class="testimonials__item">
+                    <img class="icon testimonials__icon" src="images/testimonials_icon.png">
+                    <p class="testimonials__text">
+                        First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life <br> blessed you meat shall you winged under from their there he That you're one called gather make much red <br> wherein set fourth green bearing fifth replenish given she had.
+                    </p>
+                    <img class="icon testimonials__icon testimonials__icon_portret" src="images/testimonials_aIcon.png">
+                    <p class="testimonials__text">
+                        Jack Marsh, Executive
+                    </p>
+                </div>
+                <div class="testimonials__item">
+                    <img class="icon testimonials__icon" src="images/testimonials_icon.png">
+                    <p class="testimonials__text">
+                        First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life <br> blessed you meat shall you winged under from their there he That you're one called gather make much red <br> wherein set fourth green bearing fifth replenish given she had.
+                    </p>
+                    <img class="icon testimonials__icon testimonials__icon_portret" src="images/testimonials_aIcon.png">
+                    <p class="testimonials__text">
+                        Jack Marsh, Executive
+                    </p>
+                </div>
+            </div>
+            <div class="controller testimonials__controller">
+                <div class="controler__item selected"></div>
+                <div class="controler__item"></div>
+                <div class="controler__item"></div>
+                <div class="controler__item"></div>
+            </div>
+        </div>
+        <div class="team main__team">
+            <div class="contant">
+                <h2 class="contant__subtitle"></h2>
+                <p class="contant__text"></p>
+            </div>
+            <div class="team__body">
+                <div class="card">
+                    <div class="team__img">
+                        <img src="images/team__img1.png">
+                    </div>
+                    <div class="team__item">
+                        <div class="content">
+                            <h2 class="content__subtitle">Joseph Austin</h2>
+                            <p class="content__text team__text">Thai Message</p>
+                        </div>
+                        <div class="card__icon-group">
+                            <div class="card__icon "><i class="team__icon fab fa-facebook-f"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-twitter"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-google-plus-g"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="team__img">
+                        <img src="images/team__img2.png">
+                    </div>
+                    <div class="team__item">
+                        <div class="content">
+                            <h2 class="content__subtitle">David Hannan</h2>
+                            <p class="content__text team__text">Thai Message</p>
+                        </div>
+                        <div class="card__icon-group">
+                            <div class="card__icon "><i class="team__icon fab fa-facebook-f"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-twitter"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-google-plus-g"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="team__img">
+                        <img src="images/team__img3.png">
+                    </div>
+                    <div class="team__item">
+                        <div class="content">
+                            <h2 class="content__subtitle">Cheryl Harris</h2>
+                            <p class="content__text team__text" team__text>Thai Message</p>
+                        </div>
+                        <div class="card__icon-group">
+                            <div class="card__icon "><i class="team__icon fab fa-facebook-f"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-twitter"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-google-plus-g"></i></div>
+                            <div class="card__icon "><i class="team__icon fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="appointment main__appointment">
+            <div class="appointment__img">
+                <img src="images/appointment-tbl_img.png" alt="" class="appointment__img">
+            </div>
+            <div class="appointment__body">
+                <form action="" class="form appointment__form">
+                    <div class="col">
+                        <input type="text" class="form__item" placeholder="name">
+                        <input type="email" class="form__item" placeholder="email">
+                    </div>
+                    <div class="col">
+                        <select name="" id="" class="form__item">
+                            <option value="Select Service" class="form__option">Select Service</option>
+                            <option value="Normal Service" class="form__option">Normal Service</option>
+                            <option value="VIP Service" class="form__option">VIP Service</option>
+                        </select>
+                        <input type="number" class="form__item" placeholder="number">
+                        </div>
+                    <div class="col">
+                        <input type="date" class="form__item">
+                        <input type="time" class="form__item">
+                    </div>
+                    <div class="col">
+                        <textarea name="" id="" cols="30" rows="7" class="form__item" placeholder="Your notes"></textarea>
+                    </div>
+                    <div class="col">
+                        <button class="btn appointment__btn appointment__btn_wider-btn">Make an Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="service main__blog">
+            <div class="contant">
+                <h1 class="content__title">Latest From Blog</h1>
+                <p class="content__text">To doesn't his appear replenish together called he of mad place won't wherein blessed second every <br> wherein were meat kind wherein and martcin <br></p>
+            </div>
+            <div class="service__body">
+                <div class="card service__card">
+                    <div class="service__img">
+                        <img src="images/blog_1.png">
+                    </div>
+                    <h2 class="content__subtitle">Massage Therapy</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read More</button>
+                </div>
+                <div class="card service__card">
+                    <div class="service__img">
+                        <img src="images/blog_2.png">
+                    </div>
+                    <h2 class="content__subtitle">Massage Therapy</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read More</button>
+                </div>
+                <div class="card service__card">
+                    <div class="service__img">
+                        <img src="images/blog_3.png">
+                    </div>
+                    <h2 class="content__subtitle">Executive Reflexology</h2>
+                    <p class="content__text service__text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+                    <button class="btn service__btn btn_theme-black">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="contact main__contact">
+            <div class="content contact__content">
+                <h1 class="content__title">Get In Touch</h1>
+                <p class="content__text">To doesn't his appear replenish together called he of mad place won't wherein blessed second every <br> wherein were meat kind wherein and martcin <br> </p>
+            </div>
+            <div class="visit__body">
+                <div class="visit__info">
+                    <div class="visit__item">
+                    <div class="visit__icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="content visit__content">
+                        <p class="content__text contact__text">848 E 28th ST, BROOKLYN <br>NEW YORK, USa<br>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="visit__item">
+                    <div class="visit__icon"><i class="far fa-envelope"></i></div>
+                    <div class="content visit__content">
+                        <p class="content__text contact__text">example@leospa.com
+                        <br>example@leospa.com<br>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="visit__item">
+                    <div class="visit__icon"><i class="fas fa-tablet-alt"></i></div>
+                    <div class="content visit__content">
+                        <p class="content__text contact__text">+02 365 2365 3265 (02)
+                        <br>+01 365 2365 3265 (04)<br>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                    <form action="" class="form visit__form">
+                        <div class="col">
+                        <input type="text" placeholder="first name" class="form__item form__item_visit-form"></input>
+                    </div>
+                        <div class="col">
+                        <input type="email" placeholder="email address" class="form__item form__item_visit-form"></input>
+                    </div>
+                        <div class="col">
+                        <textarea placeholder="right comment" class="form__item form__item_visit-form" cols="30" rows="9"></textarea>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="logo footer__logo">
+                <div class="logo__content">
+                    <div class="logo__img">
+                        <img src="images/Icon.png" alt="">
+                    </div>
+                    <span class="logo__text">Leospa</span>
+                </div>
+            </div>
+            <nav class="nav footer__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">about</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">feature</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">service</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer__icons">
+                <a href="" class="footer__icon"><span class="fab fa-facebook-f"></span></a>
+                <a href="" class="footer__icon"><span class="fab fa-twitter"></span></a>
+                <a href="" class="footer__icon"><span class="fab fa-instagram"></span></a>
+                <a href="" class="footer__icon"><span class="fab fa-vimeo-v"></span></a>
+            </div>
+            <p class="footer__copyright">© COPYRIGHT 2019 <span>themeies.com.</span> ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2ec92cb797.js" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script> 
+</body>
+</html>
