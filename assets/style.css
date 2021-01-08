@@ -658,9 +658,8 @@ html {
     margin: 0 auto 246px auto;
 }
 .contact__text {
-    text-align: left;
-}
-.contact__text {
+    margin: 0;  
+    text-align: justify;
     line-height: 1.7;
 }
 .visit__body {
@@ -697,6 +696,10 @@ html {
     padding-bottom: 40px;
 }
 .visit__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
     padding-left: 30px;
 }
 /************************/
