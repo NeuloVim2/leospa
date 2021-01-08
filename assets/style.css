@@ -478,7 +478,8 @@ html {
 }
 .testimonials__content {
     max-width: 1162px;
-    margin: 139px auto 120px auto;
+    margin: 139px auto 0 auto;
+    height: fit-content;
     padding: 0 15px;
     transition: 0.4s;
 }
@@ -490,43 +491,44 @@ html {
     margin-top: 40px;
     line-height: 1.7;
 }
-.testimonials__item {
-    display: none;
-}
-.testimonials__item.active {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
+
 .testimonials__icon {
     width: 60px;
     height: 50px;
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
 }
 .testimonials__icon_portret {
     width: 76px;
     height: 76px;
 } 
 .testimonials__controller {
-    margin: 0 auto;
-    padding: 0 0 40px 0;
-}
-.controller { 
-    width: 80px;
     display: flex;
-    justify-content: space-evenly;
+    margin: 120px auto 0 auto;
+    padding: 0 0 40px 0;
+    width: 80px;
 }
-.controler__item {
+.testimonials__controller>li {
     background-color: #ffc3c2;
     width: 10px;
     height: 10px;
     border-radius: 60%;
-    margin-top: 50px;
+    transition: .2s background-color;
 }
-.controler__item.selected {
+.testimonials__controller>li:first-child { 
+    margin-left: 8px;
+    margin-right: none;
+}
+.testimonials__controller>li {
+    margin-right: 8px; 
+}
+.testimonials__controller>li>button{
+    opacity: 0;
+}
+.testimonials__controller>li.slick-active {
     background-color: #ff8784;
 }
-.controler__item:hover {
+.testimonials__controller>li:hover,
+.testimonials__controller>li.slide-active:hover {
     cursor: pointer;
     background-color: #ff8784;
 }
@@ -925,6 +927,7 @@ html {
     }
     .content__text {
         line-height: 1.6;
+        width: 100%;
     }
     .main__appointment {
         display: block;
@@ -940,6 +943,7 @@ html {
     }
     .testimonials__text {
         line-height: 1.5;
+        width: 100%;
     }
     .form {
         width: auto;
