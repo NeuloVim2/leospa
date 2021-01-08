@@ -112,6 +112,7 @@ html {
     text-align: center;
     margin: 32px 0  0 0;
     line-height: 1.6;
+    width: 100%;
 }
 .form {
     width: calc(6.686% * 7 + 25px * 6);
