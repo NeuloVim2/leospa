@@ -477,11 +477,15 @@ html {
     background-color: #fff9f8;
 }
 .testimonials__content {
+    display: flex;
+    flex-flow: column nowrap;
     max-width: 1162px;
     margin: 139px auto 0 auto;
-    height: fit-content;
     padding: 0 15px;
     transition: 0.4s;
+}
+.testimonials__item {
+    flex: 0 1 auto;
 }
 .testimonials__text {
     font-family: 'Rufina', serif;
