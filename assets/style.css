@@ -377,6 +377,8 @@ html {
     position: relative;
     min-height: 571px;
     cursor: pointer;
+    background-position: center;
+    background-size: cover;
 }
 .feature__item:hover {
     background: #ff817e;
