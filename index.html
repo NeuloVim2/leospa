@@ -5,6 +5,8 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500;700&amily=Rufina:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="scripts/plugins/pickaday/pickaday.css">
+    <link rel="stylesheet" href="scripts/plugins/timepicker/wickedpicker.css">
     <link rel="stylesheet" href="scripts/plugins/slick/slick.css">
     <link rel="stylesheet" href="scripts/plugins/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/style.css"> 
@@ -266,7 +268,7 @@
                         <input type="email" class="form__item" placeholder="email">
                     </div>
                     <div class="col">
-                        <select name="" id="" class="form__item">
+                        <select class="form__item">
                             <option value="Select Service" class="form__option">Select Service</option>
                             <option value="Normal Service" class="form__option">Normal Service</option>
                             <option value="VIP Service" class="form__option">VIP Service</option>
@@ -274,11 +276,11 @@
                         <input type="number" class="form__item" placeholder="number">
                         </div>
                     <div class="col">
-                        <input type="date" class="form__item">
-                        <input type="time" class="form__item">
+                        <input type="text" id="datepicker" class="appointment__datepicker form__item">
+                        <input type="text" id="timepicker" class="appointment__timepicker form__item">
                     </div>
                     <div class="col">
-                        <textarea name="" id="" cols="30" rows="7" class="form__item" placeholder="Your notes"></textarea>
+                        <textarea cols="30" rows="7" class="form__item" placeholder="Your notes"></textarea>
                     </div>
                     <div class="col">
                         <button class="btn appointment__btn appointment__btn_wider-btn">Make an Appointment</button>
@@ -393,6 +395,9 @@
     </footer>
     <script src="https://kit.fontawesome.com/2ec92cb797.js" crossorigin="anonymous"></script>
     <script src="scripts/jQuery3.5.1.js"></script>
+    <script src="scripts/plugins/pickaday/pickaday.js"></script>
+    <script src="scripts/plugins/pickaday/pickaday.jquery.js"></script>
+    <script src="scripts/plugins/timepicker/wickedpicker.js"></script>
     <script src="scripts/plugins/slick/slick.min.js"></script>
     <script src="scripts/index.js"></script> 
 </body>

@@ -756,6 +756,17 @@ html {
     margin: 0 0 50px 0;
 }
 /*******Footer Section*******/
+
+/* Dtepicker */
+.pika-single {
+    box-shadow: none;
+    background-color: white;
+}
+/* End Dtepicker */
+
+/* Timepicker */
+
+/* End Timepicker */
 @media (max-width: 1537px) {
     html {
         font-size: 13px;
@@ -781,14 +792,6 @@ html {
     .banner__content {
         width: 100%;
     }
-    /* .banner__subtitle, 
-    .banner__title, 
-    .banner__text     {
-        text-align: center;
-    }
-    .banner__reserve {
-        justify-content: center;
-    } */
     .content__text {
         width: 80%;
     }
