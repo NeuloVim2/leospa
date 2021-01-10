@@ -575,6 +575,7 @@ html {
     width: calc(100% - 2 * 25px);
     box-shadow: 0px 15px 30px 0px rgba(48, 56, 59, 0.1);
     background-color: white;
+    transition: all .3s ease-in-out ;
 }
 .team__text {
     margin-top: 0px;
@@ -586,17 +587,15 @@ html {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    margin: 30px auto 30px auto; 
+    opacity: 0;
+    margin: 0 auto 30px auto;
+    transition: all .3s ease-in-out ;
 } 
-.card__icon-group:hover {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 30px auto 30px auto; 
+.card:hover .card__icon-group {
+    opacity: 1;
+    margin-top: 30px;
 }
-.card__icon-group_hidden {
-    display: none;
-}
+
 .card__icon {
     width: 30px;
     height: 30px;
