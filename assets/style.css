@@ -54,6 +54,7 @@ html {
     font-size: 0.7142rem;
     width: 170px;
     height: 50px;
+    transition: .3s all;
 }
 .btn:hover {
     cursor: pointer;
@@ -202,6 +203,7 @@ html {
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 1.5;
+    transition: .3s color;
 }
 .nav__link:hover {
     color: #ff817e;
@@ -249,6 +251,7 @@ html {
     color: rgb(255, 255, 255);
     line-height: 5.538;
     margin: 0 55px 0 0;
+    transition: .3s color;
 }
 .banner__btn:hover {
     cursor: pointer;
@@ -272,6 +275,7 @@ html {
     align-items: center;
     justify-content: center;
     flex: 0 0 44px;
+    transition: .3s color;
 }
 .banner__icon:hover {
     cursor: pointer;
@@ -440,7 +444,6 @@ html {
   margin-top: 40px;
   align-self: center;
 }
-
 .service__card {
     padding: 23px;
     box-shadow: 0px 15px 40px 0px rgba(4, 10, 50, 0.1);
@@ -603,6 +606,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s all;
 }
 .card__icon:hover {
     cursor: pointer;
@@ -734,6 +738,7 @@ html {
     font-size: 0.9285rem;
     color: rgb(58, 65, 78);
     line-height: 1.923;
+    transition: .3s all;
   }
 .footer__icon span:hover {
     cursor: pointer;
