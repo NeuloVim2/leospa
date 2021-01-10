@@ -5,6 +5,7 @@ const headerMenu           = $( '.header__menu' ); // Get .header__menu element 
 const sliderTestimonials   = $('.testimonials__slider'); // Get .testimonials__slider element from testimonials sections
 const datepicker           = $('#datepicker'); // Get #datepicker element from appointment section
 const timepicker           = $('#timepicker'); // Get #timepicker element from appointment section
+const videoPreviewer       = $('[fancy-box]');
 
 $(document).ready(function() {
 
@@ -41,5 +42,7 @@ $(document).ready(function() {
   // Timepicker 'Timepicker' initialisation
   timepicker.wickedpicker();
 
+  //FancyBox initialisation
+  videoPreviewer.fancybox();
 });
 
