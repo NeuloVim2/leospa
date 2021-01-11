@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Header -->
         <header class="header">
             <div class="container header__container">
                 <div class="logo">
@@ -63,7 +64,9 @@
         </div>
         <div class="header__img"><img src="images/face1.png" alt=""></div>
     </div>
+    <!-- End Header -->
     <main class="main" id="main">
+        <!-- About -->
         <section class="about" id="about">
             <div class="content about__body">
                 <div class="about__img"><img src="images/flower2.png" alt=""></div>
@@ -77,6 +80,8 @@
                 <img class="about__image" src="images/flower3.png"></img>
             </div>
         </section>
+        <!-- End About -->
+        <!-- Feature -->
         <section class="feature main__feature" id="feature">
             <div class="feature__item">
                 <div class="feature__img" style="background-image: url(./images/feature_1.png);">
@@ -119,6 +124,8 @@
                 </div>
             </div>
         </section>
+        <!-- End Feature -->
+        <!-- Service -->
         <section class="service main__service" id="service">
             <div class="contant">
                 <h2 class="content__title">Popular Procedures</h2>
@@ -151,6 +158,8 @@
                 </div>
             </div>
         </section>
+        <!-- End Service -->
+        <!-- Testimonials -->
         <section class="testimonials main__testimonials">
             <div class="testimonials__content testimonials__slider">
                 <div class="testimonials__item">
@@ -195,6 +204,8 @@
                 </div>
             </div>
         </section>
+        <!-- End Testimonials -->
+        <!-- Team -->
         <section class="team main__team">
             <div class="contant">
                 <h2 class="contant__subtitle"></h2>
@@ -254,6 +265,8 @@
                 </div>
             </div>
         </section>
+        <!-- End Team -->
+        <!-- Appointment -->
         <section class="appointment main__appointment">
             <div class="appointment__img" style="background-image: url(./images/appointment-tbl_img.png);"></div>
             <div class="appointment__body">
@@ -268,11 +281,11 @@
                             <option value="Normal Service" class="form__option">Normal Service</option>
                             <option value="VIP Service" class="form__option">VIP Service</option>
                         </select>
-                        <input type="number" class="form__item" placeholder="number">
+                        <input type="tel" class="form__item" placeholder="phone">
                         </div>
                     <div class="col">
-                        <input type="text" id="datepicker" class="appointment__datepicker form__item">
-                        <input type="text" id="timepicker" class="appointment__timepicker form__item">
+                        <input type="text" id="datepicker" class="appointment__datepicker form__item" placeholder="pick a date...">
+                        <input type="text" id="timepicker" class="appointment__timepicker form__item" placeholder="pick a time...">
                     </div>
                     <div class="col">
                         <textarea cols="30" rows="7" class="form__item" placeholder="Your notes"></textarea>
@@ -283,6 +296,8 @@
                 </form>
             </div>
         </section>
+        <!-- End Appointment -->
+        <!-- Blog -->
         <section class="service main__blog">
             <div class="contant">
                 <h1 class="content__title">Latest From Blog</h1>
@@ -315,6 +330,8 @@
                 </div>
             </div>
         </section>
+        <!-- End Blog -->
+        <!-- Contact -->
         <section class="contact main__contact" id="contact">
             <div class="content contact__content">
                 <h1 class="content__title">Get In Touch</h1>
@@ -359,7 +376,9 @@
                 </form>
             </div> 
         </section>
+        <!-- End Contact -->
     </main>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer__container">
             <div class="logo footer__logo">
@@ -388,6 +407,7 @@
             <p class="footer__copyright">© COPYRIGHT 2019 <span>themeies.com.</span> ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
+    <!-- End Footer -->
     <script src="https://kit.fontawesome.com/2ec92cb797.js" crossorigin="anonymous"></script>
     <script src="./scripts/jQuery3.5.1.js"></script>
     <script src="./scripts/plugins/fancy-box/jquery.fancybox.js"></script>
@@ -395,6 +415,10 @@
     <script src="./scripts/plugins/pickaday/pickaday.jquery.js"></script>
     <script src="./scripts/plugins/timepicker/wickedpicker.js"></script>
     <script src="./scripts/plugins/slick/slick.min.js"></script>
+
+    <!-- Ponyfill for vars in IE -->
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    
     <script src="./scripts/index.js"></script> 
 </body>
 </html>

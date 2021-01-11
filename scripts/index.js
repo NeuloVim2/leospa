@@ -42,7 +42,10 @@ $(document).ready(function() {
   // Timepicker 'Timepicker' initialisation
   timepicker.wickedpicker();
 
-  //FancyBox initialisation
+  // FancyBox initialisation
   videoPreviewer.fancybox();
 });
+
+// Plugin for using css var at IE
+cssVars({watch: true});
 

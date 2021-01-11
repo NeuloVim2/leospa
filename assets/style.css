@@ -4,6 +4,11 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+:root {
+    --primary: #ff817e;
+    --text: #263a41;
+    --secondary: #888888;
+}
 
 html {
     font-size: 16px;
@@ -69,12 +74,12 @@ html {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    background: #ff817e;
+    background: var(--primary);
 }
 
 .btn {
     position: relative;
-    background: #ff817e;
+    background: var(--primary);
     border: none;
     border-radius: 50px;
     color: white;
@@ -160,7 +165,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.0714rem;
-    color: #b5b5b5;
+    color: var(--text);
     text-align: center;
     margin: 32px 0  0 0;
     line-height: 1.6;
@@ -168,6 +173,9 @@ html {
 }
 .form {
     width: calc(6.686% * 7 + 25px * 6);
+}
+input::placeholder {
+    color: var(--secondary);
 }
 .form__item {
     -webkit-box-flex: 100%;
@@ -181,7 +189,7 @@ html {
     border-right: none;
     border-bottom: 2px solid #d4d3d3;
     background-color: #fff9f8;
-    color: #616161;
+    color: var(--text);
     font-size: 0.8571rem;
     font-family: 'Roboto', serif;
     text-transform: uppercase;
@@ -244,7 +252,7 @@ html {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     display: block;
-    color: rgb(58, 65, 78);
+    color: var(--text);
     font-size: 2.1428rem;
     padding-top: 6px;
     font-family: 'Playfair Display', serif;
@@ -266,7 +274,7 @@ html {
     padding: 0 25px;
 }
 .nav__link {
-    color: rgb(58, 65, 78);
+    color: var(--text);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -348,7 +356,7 @@ html {
     height: 44px;
     border: none;
     border-radius: 50%;
-    color: #ff817e;
+    color: var(--primary);
     background-color: #fcf5ee;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,7 +382,7 @@ html {
 .banner__text {
     font-size: 1.0714rem;
     font-family: "Roboto";
-    color: rgb(85, 85, 85);
+    color: var(--text);
     line-height: 1.8;
     text-align: left; 
 }
@@ -390,7 +398,7 @@ html {
 .banner__title {
     font-size: 4.2857rem;
     font-family: "Rufina";
-    color: rgb(30, 37, 40);
+    color: var(--text);
     font-weight: bold;
     line-height: 1.25;
     text-align: left;
@@ -406,7 +414,7 @@ html {
 .banner__subtitle {
     font-size: 1.0714rem;
     font-family: "Rufina";
-    color: rgb(255, 129, 126);
+    color: var(--primary);
     text-transform: uppercase;
     line-height: 4.8;   
 }
@@ -448,11 +456,11 @@ html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.4285rem;
-    color: #b5b5b5;
+    color: var(--secondary);
     text-transform: uppercase;
 }
 .about__title {
-    color: #1e2528;
+    color: var(--text);
 }
 .about__image {
     width: 88px;
@@ -757,7 +765,7 @@ html {
     height: 30px;
     border-radius: 50%;
     border: 1px solid black;
-    color: #263a41;
+    color: var(--text);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -916,7 +924,8 @@ html {
 
 /*******Footer Section*******/
 .footer__container {
-    margin: 0 auto 90px auto;
+    margin: auto;
+    padding-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -953,14 +962,14 @@ html {
 .footer__copyright {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9285rem;
-    color: rgb(177, 180, 187);
+    color: var(--secondary)
     line-height: 1.923;
     text-align: center;
 }
 .footer__copyright span{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    color: rgb(255, 129, 126);
+    color: var(--primary);
 }
 .footer__logo {
     margin: 0 0 50px 0;
