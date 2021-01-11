@@ -326,7 +326,7 @@ input::placeholder {
 
 /*****Banner Section******/
 .banner {
-    background: url("/images/flower1.png") center left/ contain no-repeat;
+    background: url("../images/flower1.png") center left/ contain no-repeat;
 }
 .banner__btn {
     display: block;
